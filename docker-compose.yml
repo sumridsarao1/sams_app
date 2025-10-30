@@ -1,0 +1,29 @@
+version: '3.6'
+
+services:
+  backend:
+    build: ./backend
+    container_name: sams_app-backend
+    ports:
+      - "5000:5000"
+    networks:
+      - sams_network
+
+
+  frontend:
+    build: ./frontend
+    container_name: sams_app-frontend
+    ports:
+      - "3000:3000"
+    environment:
+      - BACKEND_URL=http://backend:5000/submit
+    links:
+      - backend
+    depends_on:
+      - backend
+    networks:
+      - sams_network
+
+  
+networks:
+  sams_network: {}
