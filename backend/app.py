@@ -14,7 +14,7 @@ def submit():
         name = data.get('name')
         password = data.get('password')
 
-        print(f"✅ Received from frontend → Name: {name}, Password: {password}")
+        print(f"Received from frontend → Name: {name}, Password: {password}")
 
         return jsonify({
             "message": "Data received successfully",

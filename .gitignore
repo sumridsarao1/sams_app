@@ -1,2 +1,13 @@
-node_modules/
 .vscode
+
+# Python venv
+venv/
+__pycache__/
+*.pyc
+
+# Node dependencies
+node_modules/
+
+# Logs
+nohup.out
+*.log
