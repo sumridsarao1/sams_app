@@ -19,3 +19,27 @@ Killed
 > node app.js
 
 ✅ Frontend running on http://localhost:3000
+Killed
+
+> frontend@1.0.0 start
+> node app.js
+
+✅ Frontend running on http://localhost:3000
+Killed
+
+> frontend@1.0.0 start
+> node app.js
+
+✅ Frontend running on http://localhost:3000
+Killed
+
+> frontend@1.0.0 start
+> node app.js
+
+✅ Frontend running on http://localhost:3000
+
+> frontend@1.0.0 start
+> node app.js
+
+✅ Frontend running on http://localhost:3000
+Killed
