@@ -25,7 +25,7 @@ app.post('/submit', async (req, res) => {
   };
 
   // ✅ Dynamically pick backend URL (local or Docker)
-  const backendURL = process.env.BACKEND_URL || 'http://localhost:5000/submit';
+  const backendURL = process.env.BACKEND_URL || '/submit';
 
   try {
     const response = await fetch(backendURL, {
